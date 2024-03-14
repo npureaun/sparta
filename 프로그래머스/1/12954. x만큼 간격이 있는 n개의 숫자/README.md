@@ -1,10 +1,10 @@
 # [level 1] x만큼 간격이 있는 n개의 숫자 - 12954 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12954) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12954?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 4.19 MB, 시간: 0.19 ms
+메모리: 59.2 MB, 시간: 0.06 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 14일 16:30:02
+2024년 03월 14일 16:39:57
 
 ### 문제 설명
 
