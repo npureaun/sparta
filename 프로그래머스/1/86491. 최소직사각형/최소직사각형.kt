@@ -1,12 +1,14 @@
 import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun solution(sizes: Array<IntArray>): Int {
         var w=0; var h=0;
         sizes.forEach {
-            it.sort()
-            w= max(w, it[0])
-            h= max(h, it[1])
+            var maxEle=max(it[0],it[1])
+            var minEle= min(it[0],it[1])
+            w= max(w, maxEle)
+            h= max(h,minEle)
         }
         return w*h
     }
