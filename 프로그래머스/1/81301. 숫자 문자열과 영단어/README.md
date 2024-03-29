@@ -1,10 +1,10 @@
 # [level 1] 숫자 문자열과 영단어 - 81301 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/81301) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/81301?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 4.08 MB, 시간: 0.01 ms
+메모리: 60.1 MB, 시간: 13.42 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 29일 15:43:27
+2024년 03월 29일 16:03:18
 
 ### 문제 설명
 
