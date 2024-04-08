@@ -1,14 +1,14 @@
 class Solution {
-    private fun findStartPoint(park: Array<String>):IntArray
+   private fun findStartPoint(park: Array<String>):IntArray
     {
         val now= IntArray(2){0}
         for(i in park.indices)
         {
             if(park[i].indexOf("S")!=-1) {
+                now[0]=i
                 now[1] = park[i].indexOf("S")
                 break
             }
-            else now[0]++
         }
         return now
     }
