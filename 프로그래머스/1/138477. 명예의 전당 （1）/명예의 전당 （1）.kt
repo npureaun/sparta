@@ -1,16 +1,14 @@
+import java.util.PriorityQueue
+
 class Solution {
     fun solution(k: Int, score: IntArray): IntArray {
         var answer: IntArray = intArrayOf()
-        var arr = IntArray(k){-1}
+        var q = PriorityQueue<Int>()
 
-        for(i in score.indices)
-        {
-            if(arr.minOf { it } < score[i])
-            {
-                arr[arr.indexOf(arr.minOf { it })] = score[i]
-            }
-
-            answer+=arr.filter { it>-1 }.minOf { it }
+        score.forEach {
+            q.add(it)
+            if (q.size > k) q.poll()
+            answer += q.peek()
         }
         return answer
     }
