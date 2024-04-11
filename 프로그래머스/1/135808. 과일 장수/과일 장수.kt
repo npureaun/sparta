@@ -2,9 +2,9 @@ class Solution {
     fun solution(k: Int, m: Int, score: IntArray): Int {
         var answer: Int = 0
         score.sortDescending()
-        for(i in m-1 until score.size step m)
+        for(i in score.indices)
         {
-            answer+=score.slice((i-m)+1..i).minOf { it }*m
+            if((i+1)%m==0) answer+=score[i]*m
         }
         return answer
     }
