@@ -1,12 +1,6 @@
 class Solution {
-    fun isPrime(n: Int):Boolean {
-        if (n < 2) return false
-        var i = 2
-        while (i * i <= n) {
-            if (n % i++ == 0) return false
-        }
-        return true
-    }
+    private fun isPrime(n: Int):Boolean =
+        (2..n / 2).count { n%it==0 }==0
 
     fun solution(nums: IntArray): Int {
         var answer = 0

@@ -1,10 +1,10 @@
 # [level 1] 소수 만들기 - 12977 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12977?language=kotlin) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12977) 
 
 ### 성능 요약
 
-메모리: 61.8 MB, 시간: 0.01 ms
+메모리: 61.8 MB, 시간: 1.70 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 16일 11:24:16
+2024년 04월 16일 11:36:06
 
 ### 문제 설명
 
