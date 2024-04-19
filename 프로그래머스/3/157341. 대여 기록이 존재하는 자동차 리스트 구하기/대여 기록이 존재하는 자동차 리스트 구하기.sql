@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT ch.CAR_ID
+FROM CAR_RENTAL_COMPANY_CAR cc join CAR_RENTAL_COMPANY_RENTAL_HISTORY ch
+USING(CAR_ID)
+WHERE cc.CAR_TYPE in ('세단') AND DATE_FORMAT(START_DATE, '%m')= 10 
+group by ch.CAR_ID
+order by ch.CAR_ID desc
