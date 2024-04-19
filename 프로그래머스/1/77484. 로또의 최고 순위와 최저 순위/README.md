@@ -1,10 +1,10 @@
 # [level 1] 로또의 최고 순위와 최저 순위 - 77484 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 4.21 MB, 시간: 0.01 ms
+메모리: 62 MB, 시간: 6.90 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 19일 09:33:13
+2024년 04월 19일 09:53:46
 
 ### 문제 설명
 
