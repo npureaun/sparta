@@ -1,12 +1,9 @@
 import java.lang.Math.sqrt
 
 class Solution {
-    private fun getCount(n: Int): Int {
-        var cnt=0
-        for(i in 1..sqrt(n.toDouble()).toInt())
-            if(n%i==0) cnt+=if(i==n/i) 1 else 2
-        return cnt
-    }
+    private fun getCount(n: Int):Int=
+        (1..sqrt(n.toDouble()).toInt()).filter { n%it==0 }
+            .sumOf { +if(it==n/it) 1 else 2 }
 
     fun solution(number: Int, limit: Int, power: Int): Int {
         var answer = 0
