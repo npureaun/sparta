@@ -1,14 +1,16 @@
 class Solution {
     fun solution(X: String, Y: String): String {
-        val answer = StringBuilder()
-        
+        var answer = StringBuilder()
+        val checkX=Array<Int>(10){0}
+        val checkY=Array<Int>(10){0}
+
+        X.forEach { checkX[it.digitToInt()]++}
+        Y.forEach { checkY[it.digitToInt()]++}
         for(i in 0..9)
         {
-            val xCount=X.count { it==i.digitToChar() }
-            val yCount=Y.count { it==i.digitToChar() }
-            if(xCount>0&&yCount>0)
+            if(checkX[i]>0&&checkY[i]>0)
             {
-                for(j in 0 until minOf(xCount,yCount))
+                for(j in 0 until minOf(checkX[i],checkY[i]))
                     answer.append(i.digitToChar())
             }
         }
