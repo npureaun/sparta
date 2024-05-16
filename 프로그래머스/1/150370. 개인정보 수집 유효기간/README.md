@@ -1,10 +1,10 @@
 # [level 1] 개인정보 수집 유효기간 - 150370 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 67 MB, 시간: 44.25 ms
+메모리: 66.2 MB, 시간: 32.86 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 16일 12:53:09
+2024년 05월 16일 12:55:14
 
 ### 문제 설명
 

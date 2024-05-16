@@ -12,8 +12,6 @@ class Solution {
 
         val nowDate = today.split(".").map { it.toInt() }
         val nowDays: Int = getTotalDays(nowDate[0], nowDate[1], nowDate[2])
-        println("==$nowDays")
-        println()
 
         for(i in privacies.indices){
             val totalDate = privacies[i].split(".", " ")
