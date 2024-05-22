@@ -1,10 +1,10 @@
 # [level 1] 달리기 경주 - 178871 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/178871) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/178871?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 4.15 MB, 시간: 0.02 ms
+메모리: 63.8 MB, 시간: 20.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 22일 09:18:03
+2024년 05월 22일 10:35:13
 
 ### 문제 설명
 
