@@ -1,18 +1,11 @@
 class Solution {
-   private fun findStartPoint(park: Array<String>):IntArray
+    private fun findStartPoint(park: Array<String>):IntArray
     {
-        val now= IntArray(2){0}
-        for(i in park.indices)
-        {
-            if(park[i].indexOf("S")!=-1) {
-                now[0]=i
-                now[1] = park[i].indexOf("S")
-                break
-            }
-        }
-        return now
+        val findIndex=park.joinToString("").indexOf("S")
+        return intArrayOf(findIndex/park.size, findIndex%park.size)
     }
-    fun solution(park: Array<String>, routes: Array<String>): IntArray {
+    
+     fun solution(park: Array<String>, routes: Array<String>): IntArray {
         var answer = findStartPoint(park)
         val m = mapOf<Char, Pair<Int, Int>>(
             'N' to Pair(-1, 0),
@@ -21,7 +14,7 @@ class Solution {
             'E' to Pair(0, 1),
         )
 
-        val st = ArrayDeque<IntArray>().apply { add(answer.copyOf()) }
+        var backUp = answer.copyOf()
         for (i in routes.indices) {
             var isFail = false
             for (j in 0 until routes[i].last().digitToInt()) {
@@ -34,8 +27,8 @@ class Solution {
                     break
                 }
             }
-            if (isFail) answer = st.last().copyOf()
-            else st.add(answer.copyOf())
+            if (isFail) answer = backUp.copyOf()
+            else backUp=answer.copyOf()
         }
         return answer
     }
